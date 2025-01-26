@@ -1,10 +1,14 @@
 import HeaderComponent from '@/components/header';
+import NecklacesComponent from '@/components/necklace';
+import SlidesMainComponent from '@/components/slide';
 
 export default function HomePage() {
   return (
-    <div className='w-full max-w-screen-2xl min-h-screen'>
+    <div className='relative w-full min-h-screen'>
       <HeaderComponent />
-      <main>
+      <SlidesMainComponent />
+      <main className='w-full max-w-screen-2xl mx-auto'>
+        <NecklacesComponent />
       </main>
     </div>
   );
